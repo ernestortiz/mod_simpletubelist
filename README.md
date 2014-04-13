@@ -6,3 +6,13 @@ This module simply shows youtube videos when selected on a dropdown list. The ma
 Simple Youtube List module works in both, Joomla 2.5.x & Joomla 3.x. It only requieres JavaScript to function propertly.
 
 A demo can be found at http://myguayabas.com/j3/index.php/components-modules-or-plugins
+
+
+Current version
+==================
+1.0
+
+License
+==================
+GNU GENERAL PUBLIC LICENSE
+Version 2, June 1991
