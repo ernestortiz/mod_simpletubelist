@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.0.0" client="site" method="upgrade">
+	<name>Simple YouTube List</name>
+	<creationDate>2014</creationDate>
+	<author>Ernesto Ortiz</author>
+	<authorEmail>ernestortizcu@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>(C) 2014. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.0</version>
+	<description>This module simply shows youtube videos when selected on a dropdown list.</description>
+	<files>
+		<filename module="mod_simpletubelist">mod_simpletubelist.php</filename>
+		<filename module="mod_simpletubelist">index.html</filename>	
+	</files>
+	<languages></languages>
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+			<field name="@spacer" type="spacer" default="" label="" description="" />
+			<field name="svList" type="textarea" default="m2ju9FJNHJc * Shingeki no Kyojin" label="List of Videos *  Titles" description="Write on each line the ID of the video, followed (if desired) by the separator * and the title of the video." rows="15" cols="45" />
+			<field name="@spacer" type="spacer" default="" label="" description="" />
+			<field name="svShuffle" type="list" default="no" description="If you want to randomize the order of the displayed videos..." label="Shuffle the list?" >
+				<option value="yes">Yes, please.</option>
+				<option value="no">Better not.</option>
+			</field>
+			<field name="@spacer" type="spacer" default="" label="" description="" />
+			<field name="svGetTitle" type="list" default="yes" description="It is better to write the title yourself, but this component can get it for you." label="Get the missing titles directly from youtube.com?" >
+				<option value="yes">Yes, please.</option>
+				<option value="no">Better not.</option>
+			</field>
+			<field name="@spacer" type="spacer" default="" label="" description="" />
+			<field name="svStyle" type="textarea" default="width:100%;height:auto;min-height:320px;" label="Style of the video's container (the iframe)" description="Write a CSS string here..." rows="2" cols="45" />
+			<field name="@spacer" type="spacer" default="" label="" description="" />	
+		 </fieldset>
+	</fields>
+</config>
+</extension>
